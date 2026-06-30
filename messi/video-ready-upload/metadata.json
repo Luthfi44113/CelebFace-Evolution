@@ -1,0 +1,37 @@
+{
+  "subject": "Lionel Messi",
+  "type": "age-progression-short",
+  "target_platform": "YouTube Shorts (vertical, US/English audience)",
+  "video": {
+    "file": "messi_age_progression_short.mp4",
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 34.6,
+    "size_mb": 24.62,
+    "video_codec": "h264 (yuv420p)",
+    "audio_codec": "aac 192k stereo",
+    "loudness": "normalized to -16 LUFS (YouTube target)"
+  },
+  "pipeline": {
+    "1_image_sourcing": "Wikimedia Commons (CC / Public Domain). 7 eras: 2007, 2011, 2015, 2018, 2022, 2025, 2026. Source files in ../photos/.",
+    "2_audio_narration": "Windows SAPI voice 'Microsoft David Desktop' (en-US). Generic third-person narrator. NOT a clone of Lionel Messi's voice.",
+    "3_music_bed": "Soft synthesized ambient pad (placeholder, low volume). RECOMMENDED: replace/layer with a track from the YouTube Audio Library before publishing for best effect.",
+    "4_assembly": "ffmpeg: blurred-fill 9:16 framing, Ken Burns (zoompan) motion, xfade transitions (fade/dissolve/smooth/fadeblack), drawtext captions, title + end cards.",
+    "elevenlabs_api": "NOT used - no API key present, and cloning a real living person's voice is disallowed (ElevenLabs ToS + likeness rights).",
+    "highfields_higgsfield_lipsync": "NOT used - intentionally avoided. Making a real living person appear to speak words they never said is a deceptive deepfake; out of scope."
+  },
+  "source_photos": [
+    {"era": "2007 - Age 19, Barcelona", "credit": "Darz Mol / Wikimedia Commons (CC BY-SA 2.5 ES)"},
+    {"era": "2011 - Prime years, Argentina", "credit": "Ludovic Peron / Wikimedia Commons (CC BY-SA 3.0)"},
+    {"era": "2015 - The Treble", "credit": "Oleg Dubina / Wikimedia Commons (CC BY-SA 3.0)"},
+    {"era": "2018 - World Cup Russia", "credit": "Kirill Venediktov / Wikimedia Commons (CC BY-SA 3.0)"},
+    {"era": "2022 - World Champion", "credit": "Hossein Zohrevand / Wikimedia Commons (CC BY 4.0)"},
+    {"era": "2025 - Inter Miami", "credit": "TheSoccerBoy / Wikimedia Commons (CC BY 4.0)"},
+    {"era": "2026 - Latest", "credit": "The White House / Wikimedia Commons (Public Domain)"}
+  ],
+  "narration_script": "From a teenage prodigy to a World Cup champion. This is Lionel Messi, through the years. At nineteen, a genius rises in Barcelona. By twenty four, the best on Earth. In twenty fifteen, he conquers Europe. Twenty eighteen, he carries Argentina. Twenty twenty two, at last, the World Cup. And in twenty twenty six, still magic. Lionel Messi. The greatest of all time.",
+  "copyright_safety": "Published video uses ONLY free-licensed photos (CC / Public Domain). The copyrighted childhood photos in ../childhood/ were deliberately EXCLUDED from this video.",
+  "ai_disclosure": "This is an AI-edited age-progression montage. Narration is a synthetic generic narrator, NOT Lionel Messi's real voice. No face-animation / lip-sync deepfake of the real person was produced.",
+  "github_size_handling": "Final file is 24.62 MB, well under GitHub's 100 MB per-file limit -> committed directly to the repo. No external cloud bucket / LFS required. (If a future render exceeds 100 MB, switch to Git LFS or upload the MP4 to object storage and commit only this metadata + URL.)"
+}
