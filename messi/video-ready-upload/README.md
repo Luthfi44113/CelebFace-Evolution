@@ -6,9 +6,9 @@ Vertical YouTube Short: evolusi wajah Lionel Messi **2007 → 2026**.
 |---|---|
 | **File** | [`messi_age_progression_short.mp4`](messi_age_progression_short.mp4) |
 | **Format** | 1080×1920 (9:16), H.264, 30fps, AAC |
-| **Durasi** | 34,6 detik (aman untuk Shorts ≤ 60s) |
-| **Ukuran** | 24,6 MB |
-| **Audio** | Narator Inggris (suara AI netral) + bed ambient + loudness −16 LUFS |
+| **Durasi** | 24,7 detik (aman untuk Shorts ≤ 60s) |
+| **Ukuran** | 21,3 MB |
+| **Audio** | Narator Inggris **ElevenLabs (suara "Brian", generik)** + bed ambient + loudness −16 LUFS |
 
 ## Cara upload ke YouTube Shorts
 1. Buka YouTube → **Create → Upload video**, pilih file `messi_age_progression_short.mp4`.
@@ -22,5 +22,5 @@ Vertical YouTube Short: evolusi wajah Lionel Messi **2007 → 2026**.
 - Detail teknis & kredit foto lengkap ada di [`metadata.json`](metadata.json).
 
 ## Ide upgrade
-- Narator kualitas lebih tinggi (neural TTS / ElevenLabs dengan suara generik berlisensi) — butuh API key.
+- Coba voice ElevenLabs lain (Adam/George/Sarah) atau ganti gaya narasi.
 - Tambah b-roll highlight atau motion grafis skor/gelar.
