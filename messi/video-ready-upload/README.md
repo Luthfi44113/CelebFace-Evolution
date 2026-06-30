@@ -1,29 +1,27 @@
 # Messi — Evolution Shorts 🎬 (ready to upload)
 
-Dua versi video vertikal (YouTube Shorts) evolusi Lionel Messi.
+Video vertikal (YouTube Shorts) evolusi Lionel Messi. Beberapa versi, dari yang paling baru/bagus:
 
-## ⭐ Utama — AI Face Evolution
-| | |
-|---|---|
-| **File** | [`messi_evolution_ai_short.mp4`](messi_evolution_ai_short.mp4) |
-| **Konsep** | Tiap era difoto → **dianimasikan jadi "wajah hidup" pakai AI** (Higgsfield Kling 2.6 image-to-video) → disambung morph-dissolve |
-| **Stages** | 1996 (child) → 2007 → 2015 → 2018 → 2022 → 2026 |
-| **Format** | 1080×1920 (9:16), H.264, 30fps, AAC · **26,4 dtk** · ~40 MB |
-| **Audio** | Narator Inggris ElevenLabs "Brian" (generik, bukan suara Messi) + bed ambient, −16 LUFS |
+## ⭐⭐ TERBAIK — Unified AI Morph (satu kesatuan)
+Dibuat **utuh di Higgsfield** (model `kling3_0`, start→end frame): wajah benar-benar **menua secara kontinu** sebagai satu perjalanan, bukan foto terpisah. Tiap morph berakhir tepat di foto awal morph berikutnya → sambungan mulus.
 
-## Alternatif — Slideshow sederhana
-[`messi_slideshow_short.mp4`](messi_slideshow_short.mp4) — versi awal (foto statis + Ken Burns + transisi), 24,7 dtk, ~21 MB. Cuma foto bebas-lisensi (tanpa childhood).
+| Versi | File | Mulai | Aman publish? |
+|---|---|---|---|
+| **Aman publish** | [`messi_evolution_safe_2007.mp4`](messi_evolution_safe_2007.mp4) · 24,6s · 19 MB | 2007→2026 | ✅ Ya — semua foto bebas-lisensi |
+| **Lengkap (dari kecil)** | [`messi_evolution_full_1996.mp4`](messi_evolution_full_1996.mp4) · 28,1s · 27 MB | 1996→2026 | ⚠️ Foto childhood berhak cipta — risiko di pengunggah |
+
+Keduanya 1080×1920 (9:16), 30fps, narator ElevenLabs "Brian" + bed ambient, −16 LUFS.
+
+## Versi lama (alternatif)
+- [`messi_evolution_ai_short.mp4`](messi_evolution_ai_short.mp4) — tiap foto dianimasikan terpisah (kling2_6 i2v) lalu disambung dissolve. Wajah hidup tapi tiap era masih terasa segmen.
+- [`messi_slideshow_short.mp4`](messi_slideshow_short.mp4) — slideshow foto statis + Ken Burns (tanpa AI face).
 
 ## Cara upload ke YouTube Shorts
-1. Upload `messi_evolution_ai_short.mp4` → otomatis jadi Short (9:16, <60s). Tambah **#Shorts**.
-2. **Disarankan** lapis/ganti musik dengan track **YouTube Audio Library** (gratis, aman).
-3. **WAJIB** aktifkan label **"Altered or synthetic content"** — video ini AI-generated.
+1. Upload file pilihan → otomatis jadi Short (9:16, <60s). Tambah **#Shorts**.
+2. **Disarankan** lapis/ganti musik dari **YouTube Audio Library** (gratis & aman).
+3. **WAJIB** aktifkan label **"Altered or synthetic content"** — ini video AI-generated.
 
-## ⚠️ Catatan penting (baca)
-- **AI-generated footage**: wajah Messi di sini **dianimasikan oleh AI** (Higgsfield), bukan rekaman asli. Ini montase age-progression yang di-label AI. **Bukan** deepfake yang membuat Messi "berbicara"; narasi pakai **suara narator AI generik (pihak ketiga), bukan suara Messi**.
-- **Hak cipta foto sumber**: stage 2007–2026 dari foto **bebas-lisensi** (Wikimedia CC/PD). Stage **1996 (childhood) berasal dari foto BERHAK CIPTA** (arsip keluarga/klub via media). Memublikasikannya = risiko klaim hak cipta + AI atas likeness orang asli → **risiko ada di pihak pengunggah**. Kalau mau aman untuk publish, hapus stage childhood / lisensikan resmi.
-- Detail teknis: [`metadata_ai.json`](metadata_ai.json).
-
-## Ide upgrade
-- Re-render klip childhood (ada artefak picture-in-picture kecil dari model AI).
-- Coba model video lain (Seedance/Kling 3.0) atau tambah motion grafis gelar/skor.
+## ⚠️ Catatan penting
+- **AI-generated footage**: wajah Messi di sini dianimasikan/di-morph oleh AI (Higgsfield), bukan rekaman asli. Di-label AI age-progression. **Bukan** deepfake "berbicara"; narasi pakai suara narator AI generik, **bukan suara Messi**.
+- **Hak cipta**: versi `safe_2007` cuma pakai foto bebas-lisensi (CC/PD) → aman. Versi `full_1996` memuat foto childhood **berhak cipta** yang di-animasikan → risiko hak cipta + likeness saat publish ada di pengunggah.
+- Detail teknis: [`metadata_morph.json`](metadata_morph.json).

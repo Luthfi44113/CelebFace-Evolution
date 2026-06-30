@@ -1,0 +1,21 @@
+{
+  "subject": "Lionel Messi",
+  "type": "unified-ai-morph-evolution",
+  "target_platform": "YouTube Shorts (vertical)",
+  "versions": [
+    {"file": "messi_evolution_safe_2007.mp4", "start": "2007", "duration_s": 24.6, "size_mb": 18.87, "publish_safe": true,  "note": "free-licensed photos only"},
+    {"file": "messi_evolution_full_1996.mp4", "start": "1996 (childhood)", "duration_s": 28.1, "size_mb": 26.62, "publish_safe": false, "note": "includes copyrighted childhood photo; uploader bears copyright/likeness risk"}
+  ],
+  "common": {"resolution": "1080x1920", "aspect_ratio": "9:16", "fps": 30, "audio": "ElevenLabs 'Brian' narration + synth ambient bed, -16 LUFS"},
+  "method": {
+    "approach": "Unified continuous aging morph generated natively in Higgsfield (NOT separate clips wiggling).",
+    "model": "kling3_0 (Kling v3.0), --start-image + --end-image, --mode std, --aspect_ratio 9:16, --duration 5, --sound off. ~7.5 credits per morph.",
+    "morph_chain": ["1996->2007", "2007->2015", "2015->2018", "2018->2022", "2022->2026"],
+    "seamlessness": "Each morph ends on the photo that begins the next morph, so concatenation (short dissolve) yields one continuous aging arc.",
+    "post": "ffmpeg: lanczos upscale 720p->1080x1920, 30fps, title+end cards, narration+music mux, loudnorm.",
+    "why_not_seedance": "seedance_2_0_mini start+end morph failed repeatedly; kling3_0 worked reliably. veo3_1_lite (8s) and seedance_2_0 full (up to 9 image refs) are alternatives.",
+    "backend_note": "Higgsfield API returned intermittent HTTP 522 during this build; used submit-with-retry + tolerant polling. Failed/unsubmitted jobs not charged."
+  },
+  "ai_disclosure": "AI-generated/animated likeness of a real person, clearly labeled age-progression. No lip-sync 'speaking' deepfake; narration is a generic AI voice, not Messi's.",
+  "github_size_handling": "Both files < 100 MB -> committed directly. No LFS/bucket needed."
+}
