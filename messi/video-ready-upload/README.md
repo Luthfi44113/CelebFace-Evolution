@@ -1,26 +1,29 @@
-# Messi — Age Progression Short 🎬 (ready to upload)
+# Messi — Evolution Shorts 🎬 (ready to upload)
 
-Vertical YouTube Short: evolusi wajah Lionel Messi **2007 → 2026**.
+Dua versi video vertikal (YouTube Shorts) evolusi Lionel Messi.
 
+## ⭐ Utama — AI Face Evolution
 | | |
 |---|---|
-| **File** | [`messi_age_progression_short.mp4`](messi_age_progression_short.mp4) |
-| **Format** | 1080×1920 (9:16), H.264, 30fps, AAC |
-| **Durasi** | 24,7 detik (aman untuk Shorts ≤ 60s) |
-| **Ukuran** | 21,3 MB |
-| **Audio** | Narator Inggris **ElevenLabs (suara "Brian", generik)** + bed ambient + loudness −16 LUFS |
+| **File** | [`messi_evolution_ai_short.mp4`](messi_evolution_ai_short.mp4) |
+| **Konsep** | Tiap era difoto → **dianimasikan jadi "wajah hidup" pakai AI** (Higgsfield Kling 2.6 image-to-video) → disambung morph-dissolve |
+| **Stages** | 1996 (child) → 2007 → 2015 → 2018 → 2022 → 2026 |
+| **Format** | 1080×1920 (9:16), H.264, 30fps, AAC · **26,4 dtk** · ~40 MB |
+| **Audio** | Narator Inggris ElevenLabs "Brian" (generik, bukan suara Messi) + bed ambient, −16 LUFS |
+
+## Alternatif — Slideshow sederhana
+[`messi_slideshow_short.mp4`](messi_slideshow_short.mp4) — versi awal (foto statis + Ken Burns + transisi), 24,7 dtk, ~21 MB. Cuma foto bebas-lisensi (tanpa childhood).
 
 ## Cara upload ke YouTube Shorts
-1. Buka YouTube → **Create → Upload video**, pilih file `messi_age_progression_short.mp4`.
-2. Karena 9:16 & < 60 dtk, otomatis jadi **Short**. Tambahkan **#Shorts** di judul/deskripsi biar makin terdeteksi.
-3. **(Disarankan)** Ganti/lapis musiknya dengan track dari **YouTube Audio Library** (gratis & aman hak cipta) buat efek lebih “hype”. Bed ambient di video ini cuma placeholder pelan.
-4. Di pengaturan upload, aktifkan label **“Altered or synthetic content”** (konten ini AI-edited).
+1. Upload `messi_evolution_ai_short.mp4` → otomatis jadi Short (9:16, <60s). Tambah **#Shorts**.
+2. **Disarankan** lapis/ganti musik dengan track **YouTube Audio Library** (gratis, aman).
+3. **WAJIB** aktifkan label **"Altered or synthetic content"** — video ini AI-generated.
 
-## Catatan penting ⚠️
-- Video ini **AI-edited age progression**. Narasi pakai **suara narator AI generik (pihak ketiga), BUKAN suara asli Messi**. Tidak ada deepfake / lip-sync wajah Messi.
-- Hanya memakai **7 foto berlisensi bebas** (CC / Public Domain) dari `../photos/`. Foto masa kecil berhak cipta di `../childhood/` **sengaja tidak dipakai**.
-- Detail teknis & kredit foto lengkap ada di [`metadata.json`](metadata.json).
+## ⚠️ Catatan penting (baca)
+- **AI-generated footage**: wajah Messi di sini **dianimasikan oleh AI** (Higgsfield), bukan rekaman asli. Ini montase age-progression yang di-label AI. **Bukan** deepfake yang membuat Messi "berbicara"; narasi pakai **suara narator AI generik (pihak ketiga), bukan suara Messi**.
+- **Hak cipta foto sumber**: stage 2007–2026 dari foto **bebas-lisensi** (Wikimedia CC/PD). Stage **1996 (childhood) berasal dari foto BERHAK CIPTA** (arsip keluarga/klub via media). Memublikasikannya = risiko klaim hak cipta + AI atas likeness orang asli → **risiko ada di pihak pengunggah**. Kalau mau aman untuk publish, hapus stage childhood / lisensikan resmi.
+- Detail teknis: [`metadata_ai.json`](metadata_ai.json).
 
 ## Ide upgrade
-- Coba voice ElevenLabs lain (Adam/George/Sarah) atau ganti gaya narasi.
-- Tambah b-roll highlight atau motion grafis skor/gelar.
+- Re-render klip childhood (ada artefak picture-in-picture kecil dari model AI).
+- Coba model video lain (Seedance/Kling 3.0) atau tambah motion grafis gelar/skor.

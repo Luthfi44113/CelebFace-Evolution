@@ -1,0 +1,28 @@
+{
+  "subject": "Lionel Messi",
+  "type": "ai-face-evolution-short",
+  "target_platform": "YouTube Shorts (vertical, US/English audience)",
+  "video": {
+    "file": "messi_evolution_ai_short.mp4",
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 26.4,
+    "size_mb": 40.46,
+    "video_codec": "h264 (yuv420p)",
+    "audio_codec": "aac 192k stereo",
+    "loudness": "normalized to -16 LUFS"
+  },
+  "stages": ["1996 child (Newell's/Grandoli)", "2007 Barcelona", "2015 Treble", "2018 World Cup", "2022 World Champion", "2026 today"],
+  "pipeline": {
+    "1_image_sourcing": "Wikimedia Commons (CC/PD) for 2007-2026; copyrighted news-archive photo for 1996 childhood.",
+    "2_ai_animation": "Higgsfield CLI -> Kling 2.6 (kling2_6) image-to-video. Each era still animated into a 5s living clip with subtle motion. 6 clips x 5 credits = 30 credits.",
+    "3_assembly": "ffmpeg: normalize to 1080x1920/30fps, drawtext era captions, xfade dissolve transitions (morph feel), title + end cards.",
+    "4_audio": "Narration via ElevenLabs voice 'Brian' (generic, eleven_multilingual_v2) + soft synth ambient bed. NOT Messi's voice.",
+    "note_seedance_morph": "Tried seedance_2_0_mini start_image+end_image true face-aging morph -> job failed twice (not charged). Fell back to per-image Kling animation + dissolve transitions."
+  },
+  "ai_disclosure": "AI-generated/animated footage of a real person's likeness, clearly labeled as an AI age-progression edit. No lip-sync 'speaking' deepfake; narration is a generic AI narrator, not Messi's voice.",
+  "copyright_safety": "2007-2026 stages use free-licensed photos. The 1996 childhood stage derives from a COPYRIGHTED photo; publishing carries copyright + likeness risk borne by the uploader. Remove the childhood stage or license it for a fully safe publish.",
+  "known_artifacts": "Childhood clip has a minor picture-in-picture zoom artifact from the i2v model; can be re-rendered.",
+  "github_size_handling": "40.46 MB < 100 MB -> committed directly. No LFS/bucket needed."
+}
